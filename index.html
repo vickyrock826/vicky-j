@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vignesh J — Operations Leader & Business Strategist</title>
+  <meta name="description" content="Professional portfolio of Vignesh J: Operations Manager, BA Economics, MBA Candidate. F&B branch operations, inventory variance control, sales conversion, and quantitative economics.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23101217'/><text x='50' y='65' font-family='sans-serif' font-size='48' font-weight='900' fill='%23D4A359' text-anchor='middle'>VJ</text></svg>">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./styles/design-system.css">
+  <link rel="stylesheet" href="./styles/components.css">
+  <link rel="stylesheet" href="./styles/animations.css">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- ================= SITE HEADER ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-block">
+        <div class="brand-monogram">VJ</div>
+        <div class="brand-meta">
+          <span class="brand-name">VIGNESH J</span>
+          <span class="brand-role">// OPERATIONS & STRATEGY</span>
+        </div>
+      </div>
+
+      <div class="nav-actions">
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          <span>AVAILABLE FOR OPERATIONS LEADERSHIP</span>
+        </div>
+
+        <a href="#contact" class="btn btn-secondary">
+          <i data-lucide="phone-call" style="width:16px;height:16px;"></i>
+          <span>CONTACT</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="badge-tactical">
+          <i data-lucide="map-pin" style="width:14px;height:14px;"></i>
+          <span>VILLUPURAM, TN • BA ECONOMICS • MBA CANDIDATE</span>
+        </div>
+
+        <h1 class="hero-title">
+          FROM THE FRONT DESK TO <span class="highlight-brass">OPERATIONAL COMMAND.</span>
+        </h1>
+
+        <p class="hero-lead">
+          Bridging ground-level operational grit with quantitative economic strategy. Proven track record managing frontline food service branches, enforcing zero-variance cash register integrity, and accelerating sales velocity.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#simulator" class="btn btn-primary">
+            <i data-lucide="calculator" style="width:16px;height:16px;"></i>
+            <span>EXPLORE P&L SIMULATOR</span>
+          </a>
+          <a href="#trajectory" class="btn btn-secondary">
+            <i data-lucide="briefcase" style="width:16px;height:16px;"></i>
+            <span>VIEW TRACK RECORD</span>
+          </a>
+          <button class="btn btn-icon-only" data-copy="7639743256" data-label="Phone Number" title="Copy Phone Number">
+            <i data-lucide="phone" style="width:18px;height:18px;"></i>
+          </button>
+          <button class="btn btn-icon-only" data-copy="vickyvji1104@gmail.com" data-label="Email Address" title="Copy Email">
+            <i data-lucide="mail" style="width:18px;height:18px;"></i>
+          </button>
+        </div>
+
+        <!-- Hero Stats (Solid Architecture) -->
+        <div class="hero-stats">
+          <div class="stat-cell">
+            <span class="stat-value">1.0 YR</span>
+            <span class="stat-label">Food Industry Branch Manager</span>
+          </div>
+          <div class="stat-cell">
+            <span class="stat-value">1.0 YR</span>
+            <span class="stat-label">Cashier & POS Controller</span>
+          </div>
+          <div class="stat-cell">
+            <span class="stat-value">0.5 YR</span>
+            <span class="stat-label">Sales Specialist</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3D Kinetic Scene (Three.js WebGL) -->
+      <div class="hero-3d-wrapper" id="canvas-3d-wrapper">
+        <canvas id="canvas-3d"></canvas>
+        <div class="canvas-scanline"></div>
+        <div class="canvas-crosshair crosshair-tl">// SYS.3D [ACTIVE]</div>
+        <div class="canvas-crosshair crosshair-tr">THREE.JS WEBGL</div>
+        <div class="canvas-crosshair crosshair-bl">COORDINATES: 11.9401° N, 79.4861° E</div>
+        <div class="canvas-crosshair crosshair-br">DRAG TO ORBIT // CLICK PULSE</div>
+        <div class="canvas-instruction">
+          <i data-lucide="move-3d" style="width:14px;height:14px;display:inline-block;vertical-align:middle;margin-right:4px;"></i>
+          INTERACTIVE 3D KINETIC CORE
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MARQUEE TICKER ================= -->
+  <div class="ticker-strip" aria-hidden="true">
+    <div class="ticker-track">
+      <div class="ticker-item"><span>UNIT ECONOMICS</span> <span class="sep">/</span></div>
+      <div class="ticker-item"><span>FOOD COST VARIANCE CONTROL</span> <span class="sep">/</span></div>
+      <div class="ticker-item"><span>SUPPLY CHAIN & FIFO INVENTORY</span> <span class="sep">/</span></div>
+      <div class="ticker-item"><span>ZERO-VARIANCE CASH BALANCING</span> <span class="sep">/</span></div>
+      <div class="ticker-item"><span>SHIFT SCHEDULING & TEAM LEADERSHIP</span> <span class="sep">/</span></div>
+      <div class="ticker-item"><span>FRONT-LINE SALES CONVERSION</span> <span class="sep">/</span></div>
+      <div class="ticker-item"><span>P&L RECONCILIATION</span> <span class="sep">/</span></div>
+      <div class="ticker-item"><span>ECONOMETRIC DEMAND FORECASTING</span> <span class="sep">/</span></div>
+      <!-- Duplicated for seamless infinite loop -->
+      <div class="ticker-item"><span>UNIT ECONOMICS</span> <span class="sep">/</span></div>
+      <div class="ticker-item"><span>FOOD COST VARIANCE CONTROL</span> <span class="sep">/</span></div>
+      <div class="ticker-item"><span>SUPPLY CHAIN & FIFO INVENTORY</span> <span class="sep">/</span></div>
+      <div class="ticker-item"><span>ZERO-VARIANCE CASH BALANCING</span> <span class="sep">/</span></div>
+      <div class="ticker-item"><span>SHIFT SCHEDULING & TEAM LEADERSHIP</span> <span class="sep">/</span></div>
+      <div class="ticker-item"><span>FRONT-LINE SALES CONVERSION</span> <span class="sep">/</span></div>
+      <div class="ticker-item"><span>P&L RECONCILIATION</span> <span class="sep">/</span></div>
+      <div class="ticker-item"><span>ECONOMETRIC DEMAND FORECASTING</span> <span class="sep">/</span></div>
+    </div>
+  </div>
+
+  <!-- ================= TRAJECTORY SECTION ================= -->
+  <section class="section" id="trajectory">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// TRACK RECORD & ROLES</span>
+        <h2 class="section-title">THE OPERATIONAL PROGRESSION</h2>
+        <p class="section-desc">
+          Unlike theoretical managers, Vignesh started on the shop floor. Every tier of commercial execution—from individual customer persuasion and cash register control to comprehensive restaurant branch management—has been tested under live fire.
+        </p>
+      </div>
+
+      <div class="cards-grid cards-grid-3">
+        <!-- Card 1: Food Industry Manager -->
+        <div class="tactile-card">
+          <div class="card-top">
+            <div class="card-role-strip">
+              <span class="card-period">12 MONTHS</span>
+              <span class="card-duration">FOOD INDUSTRY</span>
+            </div>
+            <h3 class="card-title">Manager</h3>
+            <div class="card-org">Branch Operations & Store Leadership</div>
+            <ul class="card-bullets">
+              <li>Directly supervised full branch operations: kitchen prep cadence, service floor hygiene, and customer hospitality.</li>
+              <li>Controlled food cost variance by executing daily inventory audits, minimizing shrinkage, and enforcing FIFO storage.</li>
+              <li>Rostered and managed service crews across split shifts, maintaining high employee morale during high-intensity rush hours.</li>
+              <li>Oversaw daily vendor raw-material intake, vetting procurement quality against stringent standards.</li>
+            </ul>
+          </div>
+          <div class="card-metric-tag">
+            <span>CORE IMPACT:</span>
+            <strong>P&L & Shrinkage Defense</strong>
+          </div>
+        </div>
+
+        <!-- Card 2: Cashier & POS Controller -->
+        <div class="tactile-card">
+          <div class="card-top">
+            <div class="card-role-strip">
+              <span class="card-period">12 MONTHS</span>
+              <span class="card-duration">FINANCIAL POINT-OF-SALE</span>
+            </div>
+            <h3 class="card-title">Cashier</h3>
+            <div class="card-org">POS Controller & Cash Flow Integrity</div>
+            <ul class="card-bullets">
+              <li>Managed high-velocity point-of-sale terminals, accurately processing thousands of cash and digital transactions.</li>
+              <li>Maintained flawless end-of-day register reconciliation with an impeccable zero-discrepancy record.</li>
+              <li>Acted as the frontline gatekeeper against billing fraud, payment chargebacks, and checkout bottlenecks.</li>
+              <li>De-escalated customer billing inquiries with prompt, professional clarity and poise.</li>
+            </ul>
+          </div>
+          <div class="card-metric-tag">
+            <span>CORE IMPACT:</span>
+            <strong>100% Cash Desk Accuracy</strong>
+          </div>
+        </div>
+
+        <!-- Card 3: Sales Person -->
+        <div class="tactile-card">
+          <div class="card-top">
+            <div class="card-role-strip">
+              <span class="card-period">6 MONTHS</span>
+              <span class="card-duration">RETAIL & COMMERCIAL</span>
+            </div>
+            <h3 class="card-title">Sales Person</h3>
+            <div class="card-org">Direct Customer Acquisition & Conversion</div>
+            <ul class="card-bullets">
+              <li>Engaged walk-in prospects directly, qualifying customer needs through active listening and tailored product demos.</li>
+              <li>Overcame price sensitivity through strategic value positioning and complimentary cross-selling techniques.</li>
+              <li>Consistently exceeded individual monthly volume targets while fostering long-term customer repeat visits.</li>
+              <li>Gathered real-time customer sentiment to feed inventory demand forecasts back to management.</li>
+            </ul>
+          </div>
+          <div class="card-metric-tag">
+            <span>CORE IMPACT:</span>
+            <strong>High-Conversion Persuasion</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education & Academic Foundation (2-Column Grid) -->
+      <div style="margin-top: 2rem;">
+        <div class="tactile-card" style="background-color: var(--bg-surface-1);">
+          <div class="card-top">
+            <div class="card-role-strip">
+              <span class="card-period" style="background-color: var(--accent-brass); color: #000; font-weight: 700;">ACADEMIC ANCHOR</span>
+              <span class="card-duration">STRATEGY & ECONOMETRICS</span>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 1rem;">
+              <div>
+                <h4 style="font-size: 1.3rem; margin-bottom: 0.35rem; color: var(--accent-brass);">BA in Economics</h4>
+                <div class="card-org">Analytical Foundations</div>
+                <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6;">
+                  Trained in microeconomic price elasticity, cost curves, market structure dynamics, demand forecasting, and aggregate macroeconomic policy analysis.
+                </p>
+              </div>
+              <div>
+                <h4 style="font-size: 1.3rem; margin-bottom: 0.35rem; color: var(--accent-brass);">MBA (Pursuing)</h4>
+                <div class="card-org">Executive Management & Strategy</div>
+                <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6;">
+                  Advanced mastery in operations management, corporate financial planning, working capital optimization, organizational behavior, and scalable systems leadership.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SIMULATOR SECTION ================= -->
+  <section class="section" id="simulator">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// INTERACTIVE EXECUTIVE LAB</span>
+        <h2 class="section-title">OPERATIONS & UNIT ECONOMICS SIMULATOR</h2>
+        <p class="section-desc">
+          Test how Vignesh's dual background in Economics and Food Industry Store Management safeguards business profitability. Adjust operational parameters below to see real-time EBITDA and waste-mitigation yield.
+        </p>
+      </div>
+
+      <div class="simulator-container">
+        <!-- Controls Column -->
+        <div class="simulator-controls">
+          <!-- Slider 1: Daily Covers -->
+          <div class="sim-slider-group">
+            <div class="slider-label-row">
+              <span class="slider-name">Daily Footfall / Covers</span>
+              <span class="slider-val" id="val-covers">220 covers</span>
+            </div>
+            <input type="range" id="sim-covers" min="60" max="600" step="10" value="220" aria-label="Daily Covers">
+          </div>
+
+          <!-- Slider 2: Average Ticket Size -->
+          <div class="sim-slider-group">
+            <div class="slider-label-row">
+              <span class="slider-name">Average Spend per Guest (Ticket)</span>
+              <span class="slider-val" id="val-ticket">₹420</span>
+            </div>
+            <input type="range" id="sim-ticket" min="150" max="1500" step="25" value="420" aria-label="Average Ticket">
+          </div>
+
+          <!-- Slider 3: Target Food Cost % -->
+          <div class="sim-slider-group">
+            <div class="slider-label-row">
+              <span class="slider-name">Food Cost Ratio (COGS %)</span>
+              <span class="slider-val" id="val-cogs">30.0%</span>
+            </div>
+            <input type="range" id="sim-cogs" min="20" max="42" step="0.5" value="30.0" aria-label="Food Cost Percentage">
+          </div>
+
+          <!-- Slider 4: Shrinkage Variance Protected -->
+          <div class="sim-slider-group">
+            <div class="slider-label-row">
+              <span class="slider-name">Inventory Waste / Shrinkage Protected</span>
+              <span class="slider-val" id="val-variance">3.5%</span>
+            </div>
+            <input type="range" id="sim-variance" min="1.0" max="8.0" step="0.5" value="3.5" aria-label="Variance Percentage">
+          </div>
+        </div>
+
+        <!-- Output KPI Column -->
+        <div class="simulator-outputs">
+          <div>
+            <div class="output-header">// LIVE P&L ECONOMIC PROJECTION</div>
+            
+            <div class="output-kpis">
+              <div class="kpi-row">
+                <span class="kpi-label">Monthly Gross Revenue</span>
+                <span class="kpi-number" id="out-revenue">₹2,772,000</span>
+              </div>
+
+              <div class="kpi-row">
+                <span class="kpi-label">Prevented Waste Savings (Vignesh Audits)</span>
+                <span class="kpi-number amber" id="out-variance-savings">+₹97,020/mo</span>
+              </div>
+
+              <div class="kpi-row">
+                <span class="kpi-label">Net Operating EBITDA</span>
+                <span class="kpi-number highlight" id="out-profit">₹1,230,000</span>
+              </div>
+
+              <div class="kpi-row">
+                <span class="kpi-label">Operating Margin</span>
+                <span class="kpi-number mono" id="out-margin">44.4% EBITDA</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="simulation-verdict" id="out-verdict">
+            <strong>[STATUS: HIGH-YIELD OPERATION]</strong>
+            With 30% food cost control and stringent FIFO inventory audits, your branch captures maximum unit contribution.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STRATEGIC PILLARS SECTION ================= -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// EXECUTIVE COMPETENCIES</span>
+        <h2 class="section-title">THE THREE OPERATIONAL PILLARS</h2>
+      </div>
+
+      <div class="cards-grid cards-grid-3">
+        <div class="tactile-card">
+          <div class="card-top">
+            <span class="card-period">PILLAR 01</span>
+            <h3 class="card-title" style="margin-top: 1rem;">Floor & Cash Rigor</h3>
+            <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.75rem;">
+              Profitability is lost in the micro-details. From rigorous cash drawer reconciliation at the register to daily portion scaling, Vignesh builds a zero-leakage culture.
+            </p>
+          </div>
+          <div class="card-metric-tag">
+            <span>METHOD:</span>
+            <strong>Daily Verification Checklists</strong>
+          </div>
+        </div>
+
+        <div class="tactile-card">
+          <div class="card-top">
+            <span class="card-period">PILLAR 02</span>
+            <h3 class="card-title" style="margin-top: 1rem;">Economic Pricing</h3>
+            <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.75rem;">
+              Utilizing BA Economics principles to analyze menu elasticity, average ticket composition, and raw-material inflation, protecting margin spreads before costs rise.
+            </p>
+          </div>
+          <div class="card-metric-tag">
+            <span>METHOD:</span>
+            <strong>Unit Contribution Modeling</strong>
+          </div>
+        </div>
+
+        <div class="tactile-card">
+          <div class="card-top">
+            <span class="card-period">PILLAR 03</span>
+            <h3 class="card-title" style="margin-top: 1rem;">Crew Leadership</h3>
+            <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.75rem;">
+              Managing physical food service branches requires motivating diverse crew members during peak stress hours, ensuring guest satisfaction never stumbles.
+            </p>
+          </div>
+          <div class="card-metric-tag">
+            <span>METHOD:</span>
+            <strong>Empathetic Shift Management</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT & ACTION SECTION ================= -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// DIRECT COMMAND & INQUIRY</span>
+        <h2 class="section-title">CONNECT WITH VIGNESH J</h2>
+        <p class="section-desc">
+          Ready to deploy rigorous operational leadership, retail revenue drive, and economics-backed strategic management into your organization.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Matrix Card -->
+        <div class="contact-card">
+          <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--text-primary);">DIRECT DOSSIER</h3>
+
+          <div class="contact-row">
+            <span class="contact-label">Full Name</span>
+            <span class="contact-val">Vignesh J</span>
+          </div>
+
+          <div class="contact-row">
+            <span class="contact-label">Direct Phone</span>
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <span class="contact-val"><a href="tel:7639743256">+91 7639743256</a></span>
+              <button class="btn btn-icon-only" style="width: 32px; height: 32px;" data-copy="7639743256" data-label="Phone" title="Copy Phone">
+                <i data-lucide="copy" style="width: 14px; height: 14px;"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <span class="contact-label">Direct Email</span>
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <span class="contact-val"><a href="mailto:vickyvji1104@gmail.com">vickyvji1104@gmail.com</a></span>
+              <button class="btn btn-icon-only" style="width: 32px; height: 32px;" data-copy="vickyvji1104@gmail.com" data-label="Email" title="Copy Email">
+                <i data-lucide="copy" style="width: 14px; height: 14px;"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <span class="contact-label">Location Base</span>
+            <span class="contact-val">Villupuram, Tamil Nadu, India</span>
+          </div>
+
+          <div class="contact-row">
+            <span class="contact-label">Qualifications</span>
+            <span class="contact-val">BA in Economics, MBA (Pursuing)</span>
+          </div>
+
+          <div class="contact-row">
+            <span class="contact-label">Target Trajectory</span>
+            <span class="contact-val" style="color: var(--accent-brass);">Operations Director / Branch Head / Business Strategist</span>
+          </div>
+        </div>
+
+        <!-- Direct Actions Card -->
+        <div class="contact-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">IMMEDIATE ENGAGEMENT</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+              Whether you are scaling retail outlets, optimizing an F&B branch network, or seeking an operations manager who understands the underlying economics of profit and loss, reach out directly:
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+              <a href="tel:7639743256" class="btn btn-primary" style="width: 100%;">
+                <i data-lucide="phone" style="width: 16px; height: 16px;"></i>
+                <span>DIRECT CALL: 7639743256</span>
+              </a>
+
+              <a href="mailto:vickyvji1104@gmail.com?subject=Operations%20Leadership%20Inquiry%20-%20Vignesh%20J" class="btn btn-secondary" style="width: 100%;">
+                <i data-lucide="send" style="width: 16px; height: 16px;"></i>
+                <span>SEND INQUIRY VIA EMAIL</span>
+              </a>
+            </div>
+          </div>
+
+          <div style="background-color: var(--bg-surface-1); border: 1px solid var(--border-tactile); padding: 1.25rem; margin-top: 2rem;">
+            <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-brass); margin-bottom: 0.35rem;">
+              // MOBILITY & READINESS NOTICE
+            </div>
+            <div style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5;">
+              Based in Villupuram, TN with full readiness for regional operations management across Tamil Nadu and metro business centers.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        © 2026 VIGNESH J. ALL RIGHTS RESERVED. // VILLUPURAM, TN.
+      </div>
+      <div style="display: flex; gap: 1.5rem;">
+        <span class="mono">AESTHETIC: KINETIC BRUTALISM</span>
+        <span class="mono">ZERO GLASSMORPHISM</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Tactile Copy Notification Toast -->
+  <div class="toast-notice" id="toast-notice">DETAILS COPIED</div>
+
+  <!-- Main JavaScript Module -->
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

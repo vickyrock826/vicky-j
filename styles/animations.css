@@ -1,0 +1,73 @@
+/* ==========================================================================
+   VIGNESH J — KINETIC ANIMATIONS & MOTION
+   GPU-Accelerated 60 FPS | Zero Layout Thrash
+   ========================================================================== */
+
+/* Fade & Slide In */
+@keyframes tactile-enter {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-enter {
+  animation: tactile-enter 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+
+/* Mechanical Scanline Pulse */
+@keyframes scan-line {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(1000%); }
+}
+
+.canvas-scanline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(212, 163, 89, 0.4), transparent);
+  animation: scan-line 8s linear infinite;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+/* Coordinate Crosshair Rotation */
+@keyframes slow-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.spin-slow {
+  animation: slow-spin 20s linear infinite;
+}
+
+/* Glitch Accent on Hover for Title */
+.kinetic-title-hover:hover {
+  text-shadow: 2px 0px 0px rgba(212, 163, 89, 0.8), -2px 0px 0px rgba(16, 185, 129, 0.5);
+}
+
+/* Metric Counter Pulse */
+@keyframes metric-glow {
+  0%, 100% {
+    border-color: var(--border-tactile);
+  }
+  50% {
+    border-color: var(--accent-brass);
+  }
+}
+
+.metric-pulse {
+  animation: metric-glow 3s ease-in-out infinite;
+}
