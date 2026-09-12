@@ -9,7 +9,7 @@ export function init3DScene() {
 
   // Scene setup
   const scene = new THREE.Scene();
-  scene.background = new THREE.Color(0x101217);
+  scene.background = new THREE.Color(0x1C1F25);
 
   // Camera
   const camera = new THREE.PerspectiveCamera(
@@ -36,38 +36,38 @@ export function init3DScene() {
   const ambientLight = new THREE.AmbientLight(0x282c37, 1.2);
   scene.add(ambientLight);
 
-  const keyLight = new THREE.DirectionalLight(0xF3C375, 2.5); // Warm Burnished Brass
+  const keyLight = new THREE.DirectionalLight(0xDDD0B8, 2.5); // Ash Parchment
   keyLight.position.set(5, 6, 4);
   scene.add(keyLight);
 
-  const fillLight = new THREE.DirectionalLight(0x404859, 1.0); // Slate rim
+  const fillLight = new THREE.DirectionalLight(0x3A3F4C, 1.0); // Ash Gray rim
   fillLight.position.set(-5, -4, -3);
   scene.add(fillLight);
 
-  const cursorPointLight = new THREE.PointLight(0xD4A359, 1.8, 10);
+  const cursorPointLight = new THREE.PointLight(0xC9B99A, 1.8, 10);
   cursorPointLight.position.set(0, 0, 4);
   scene.add(cursorPointLight);
 
   // Materials (Tactile, Non-Glass Solid Finishes)
   const brassMaterial = new THREE.MeshStandardMaterial({
-    color: 0xD4A359,
-    metalness: 0.85,
-    roughness: 0.25,
+    color: 0xC9B99A,
+    metalness: 0.8,
+    roughness: 0.3,
     flatShading: true
   });
 
   const darkCarbonMaterial = new THREE.MeshStandardMaterial({
-    color: 0x1E222D,
+    color: 0x292D37,
     metalness: 0.4,
     roughness: 0.5,
     flatShading: true
   });
 
   const wireframeMaterial = new THREE.MeshBasicMaterial({
-    color: 0xD4A359,
+    color: 0xC9B99A,
     wireframe: true,
     transparent: true,
-    opacity: 0.25
+    opacity: 0.2
   });
 
   const accentMaterial = new THREE.MeshStandardMaterial({

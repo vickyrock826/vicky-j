@@ -1,161 +1,154 @@
 /* ==========================================================================
-   VIGNESH J — EXECUTIVE PORTFOLIO DESIGN SYSTEM
-   Aesthetic: Kinetic Brutalism & Executive Tactility
-   Zero Glassmorphism | No Cliché Gradients | Solid Architectural Surfaces
+   VIGNESH J — EXECUTIVE PORTFOLIO DESIGN SYSTEM v2
+   Aesthetic: Clean Professional + Ash Gray Gradients + 3D Motion
+   Mobile-First Responsive | Inspired by Hostinger Portfolio Layout
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 :root {
-  /* Color Architecture */
-  --bg-canvas: #090A0D;
-  --bg-surface-0: #101217;
-  --bg-surface-1: #151820;
-  --bg-surface-2: #1C202B;
-  --bg-surface-active: #242938;
+  /* === ASH GRAY PALETTE === */
+  --bg-deep:      #111214;
+  --bg-base:      #16181C;
+  --bg-surface:   #1C1F25;
+  --bg-raised:    #22262E;
+  --bg-hover:     #292D37;
 
-  /* Accent & Material Finishes */
-  --accent-brass: #D4A359;
-  --accent-brass-bright: #F3C375;
-  --accent-brass-dim: #9E7434;
-  --accent-brass-glow: rgba(212, 163, 89, 0.18);
+  /* Ash Gray Gradient Values */
+  --gradient-hero: linear-gradient(160deg, #111214 0%, #1a1d23 50%, #111214 100%);
+  --gradient-section: linear-gradient(180deg, #16181C 0%, #1C1F25 100%);
+  --gradient-card: linear-gradient(135deg, #1C1F25 0%, #22262E 100%);
+  --gradient-accent: linear-gradient(135deg, #B8A98A 0%, #D4C4A0 100%);
 
-  --accent-emerald: #10B981;
-  --accent-amber: #F59E0B;
-  --accent-crimson: #EF4444;
+  /* Accent: Warm Parchment (replaces harsh brass) */
+  --accent:        #C9B99A;
+  --accent-light:  #DDD0B8;
+  --accent-dim:    #9E8E74;
+  --accent-subtle: rgba(201, 185, 154, 0.12);
 
-  /* Hairline Borders & Dividers */
-  --border-hairline: #1F232D;
-  --border-tactile: #2C3240;
-  --border-focus: #D4A359;
-  --border-brass-edge: rgba(212, 163, 89, 0.4);
+  /* Semantic Colors */
+  --emerald:  #4ADE80;
+  --amber:    #FBBF24;
+  --rose:     #F87171;
+
+  /* Borders — subtle, refined */
+  --border-subtle:  rgba(255,255,255,0.05);
+  --border-default: rgba(255,255,255,0.09);
+  --border-accent:  rgba(201,185,154,0.35);
 
   /* Typography */
-  --text-primary: #F7F5F0;
-  --text-secondary: #9DA3AF;
-  --text-muted: #626A7A;
-  --text-inverted: #090A0D;
+  --text-primary:   #F0EDE8;
+  --text-secondary: #8E95A2;
+  --text-muted:     #5A6070;
+  --text-inverted:  #111214;
 
   /* Fonts */
-  --font-display: 'Syne', sans-serif;
-  --font-heading: 'Space Grotesk', sans-serif;
-  --font-body: 'Plus Jakarta Sans', sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'Inter', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', monospace;
 
-  /* Elevation & Shadows (Solid Tactile Depth, Zero Blur Glass) */
-  --shadow-tactile-sm: 0 2px 4px rgba(0, 0, 0, 0.6), 0 0 0 1px var(--border-hairline);
-  --shadow-tactile-md: 0 8px 24px -4px rgba(0, 0, 0, 0.75), 0 0 0 1px var(--border-tactile);
-  --shadow-tactile-lg: 0 16px 40px -8px rgba(0, 0, 0, 0.85), 0 0 0 1px var(--border-tactile);
-  --shadow-brass-glow: 0 0 25px rgba(212, 163, 89, 0.22);
-  --shadow-press: inset 0 2px 4px rgba(0, 0, 0, 0.8);
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1.25rem;
+  --space-lg: 2rem;
+  --space-xl: 3.5rem;
+  --space-2xl: 5rem;
+
+  /* Shadows */
+  --shadow-sm:  0 1px 3px rgba(0,0,0,0.4);
+  --shadow-md:  0 4px 16px rgba(0,0,0,0.5);
+  --shadow-lg:  0 12px 40px rgba(0,0,0,0.6);
+  --shadow-accent: 0 8px 30px rgba(201,185,154,0.15);
 
   /* Transitions */
-  --ease-tactile: cubic-bezier(0.16, 1, 0.3, 1);
-  --trans-fast: 0.15s var(--ease-tactile);
-  --trans-normal: 0.28s var(--ease-tactile);
-  --trans-smooth: 0.5s var(--ease-tactile);
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --t-fast:   0.15s var(--ease);
+  --t-normal: 0.25s var(--ease);
+  --t-slow:   0.4s var(--ease-out);
+
+  /* Border radius */
+  --radius-sm:  6px;
+  --radius-md:  12px;
+  --radius-lg:  18px;
+  --radius-full: 999px;
 }
 
-/* Reset & Box Sizing */
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* ======================== RESET ======================== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html {
   font-size: 16px;
   scroll-behavior: smooth;
-  background-color: var(--bg-canvas);
-  color: var(--text-primary);
-  font-family: var(--font-body);
-  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 body {
-  background-color: var(--bg-canvas);
+  background: var(--bg-deep);
   color: var(--text-primary);
-  min-height: 100vh;
+  font-family: var(--font-body);
+  line-height: 1.65;
   overflow-x: hidden;
-  position: relative;
-  line-height: 1.6;
+  min-height: 100vh;
 }
 
-/* Background Micro-Grid (Architectural Matrix, No Glass) */
+/* Ash gray subtle dot pattern */
 body::before {
   content: '';
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-  background-size: 48px 48px;
+  inset: 0;
+  background-image: radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 28px 28px;
   pointer-events: none;
   z-index: 0;
 }
 
-/* Selection */
-::selection {
-  background-color: var(--accent-brass);
-  color: var(--text-inverted);
-}
+::selection { background: var(--accent); color: var(--text-inverted); }
 
-/* Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  background: var(--bg-canvas);
-}
-::-webkit-scrollbar-thumb {
-  background: var(--border-tactile);
-  border-radius: 0px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-brass);
-}
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-deep); }
+::-webkit-scrollbar-thumb { background: var(--bg-hover); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent-dim); }
 
-/* Typography Utility */
-h1, h2, h3, h4, h5, h6 {
+/* ======================== TYPOGRAPHY ======================== */
+h1, h2, h3, h4, h5 {
   font-family: var(--font-display);
-  font-weight: 700;
-  line-height: 1.15;
+  line-height: 1.2;
   color: var(--text-primary);
-  letter-spacing: -0.02em;
+  font-weight: 700;
 }
 
-p {
-  color: var(--text-secondary);
-  font-size: 1.05rem;
-  line-height: 1.7;
+p { color: var(--text-secondary); line-height: 1.7; }
+a { color: inherit; text-decoration: none; }
+
+.mono { font-family: var(--font-mono); }
+.label {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.mono {
-  font-family: var(--font-mono);
-  letter-spacing: -0.03em;
-}
-
-/* Container */
+/* ======================== LAYOUT ======================== */
 .container {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 1.25rem;
   position: relative;
   z-index: 1;
 }
 
-@media (min-width: 768px) {
-  .container {
-    padding: 0 2.5rem;
-  }
+@media (min-width: 640px)  { .container { padding: 0 2rem; } }
+@media (min-width: 1024px) { .container { padding: 0 3rem; } }
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: var(--border-subtle);
+  margin: 0;
 }
